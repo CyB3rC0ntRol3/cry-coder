@@ -8,7 +8,7 @@
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # By :     Lamani Fodil Hani (VEGETA-LFH)      &        Hirokazo Nagata
 # Fb : Lamani Fodil Hani              &           Hirokazo Nagata
-# Github : www.github.com/lamanihani      &      www.github.com/
+# Github : www.github.com/lamanihani      &      www.github.com/CyB3rC0ntRol3
 # Gmail :   lamanihani1@gmail.com        &    ziadabouelfarah2@gmail.com
 #                           
 from Crypto.Cipher import XOR
@@ -17,12 +17,7 @@ import os
 import smtplib
 import random
 import time
-os.system('clear')
-print("\033[94m[✘] \033[97minstalling the \033[91mpackage \033[97m, Please wait :")
-os.system('pip install pycryptodome')
-print(" ")
-print('\033[94m[✔]\033[92m Start :') 
-time.sleep(3)
+
 os.system('clear')
 print('''     
   \033[1;31m \033[97m
@@ -88,7 +83,7 @@ if fodil == ('1') :
           print(" ")
           key = raw_input("\033[95m[?] \033[97mEnter your \033[97m\033[91mKEY \033[97m:\033[93m")
           cipher= XOR.new(key)
-          fille = input("\033[95m[?] \033[97mDrag the \033[91mfile\033[97m:\033[93m")
+          fille = raw_input("\033[95m[?] \033[97mDrag the \033[91mfile\033[97m:\033[93m")
           filles = open(fille,"r")
           read = filles.read()
           filles.close()
@@ -172,7 +167,7 @@ if fodil == ('2') :
           print(" ")
           key = raw_input("\033[95m[?] \033[97mEnter the \033[91mKEY\033[97m to decode :\033[93m ")
           cipher= XOR.new(key)
-          fille = input("\033[95m[?] \033[97mDrag the \033[91mfile\033[97m :\033[93m")
+          fille = raw_input("\033[95m[?] \033[97mDrag the \033[91mfile\033[97m :\033[93m")
           filles = open(fille,"r")
           read = filles.read()
           filles.close()
@@ -189,7 +184,6 @@ if fodil == ('Encryption') :
           print(" [✘] This is not metasploit , type a number (1 / 2)")
 if fodil == ('help') :
           print(" ツ  watch the tuturial : ")
-
 
 
 
